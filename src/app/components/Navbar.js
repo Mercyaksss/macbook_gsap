@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import { navLinks } from '../constants'
 import logo from '../../../public/logo.svg'
+import search from '../../../public/search.svg'
+import cart from '../../../public/cart.svg'
 
 function Navbar() {
   return (
@@ -19,6 +21,22 @@ function Navbar() {
                     </li>
                 ))}
             </ul>
+
+            <div className='flex-center gap-3'>
+                <button>
+                    <Image
+                        src={search}
+                        alt='Search icon'
+                    />
+                </button>
+
+                <button>
+                    <Image
+                        src={cart}
+                        alt='Cart icon'
+                    />
+                </button>
+            </div>
         </nav>
     </header>
   )
