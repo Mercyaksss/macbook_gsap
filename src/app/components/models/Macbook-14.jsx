@@ -25,7 +25,7 @@ export default function MacbookModel14(props) {
         if(!noChangeParts.includes(child.name)) {
           child.material.color = new Color(color);
         }
-      }
+      }  
     })
   }, [color, scene])
 
