@@ -9,10 +9,10 @@ import { ScrollTrigger } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger);
 
 function Showcase() {
-    const isTablet = useMediaQuery({ query: '(max-width: 1024px)'});
+    // const isTablet = useMediaQuery({ query: '(max-width: 1024px)'});
 
     useGSAP(() => {
-        if(!isTablet){
+        // if(!isTablet){
             const timeline = gsap.timeline({
                 scrollTrigger: {
                     trigger: '#showcase',
@@ -32,8 +32,8 @@ function Showcase() {
                     y: 0,
                     ease: 'power1.in'
                 })
-        }
-    }, [isTablet])
+        // }
+    }, [])
 
   return (
     <section id='showcase'>
