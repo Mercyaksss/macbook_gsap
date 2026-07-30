@@ -1,7 +1,7 @@
-'use client'
-import React, { useEffect, useRef } from 'react'
-import Image from 'next/image'
-import title from '../../../public/title.png'
+'use client';
+import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
+import title from '../../../public/title.png';
 
 function Hero() {
     const videoRef = useRef();
@@ -12,11 +12,14 @@ function Hero() {
     }, []);
   return (
     <section id='hero'>
-        <h1>MacBook Pro</h1>
-        <Image
-            src={title}
-            alt='MacBook Title'
-        />
+        <div>
+            <h1>MacBook Pro</h1>
+            <Image
+                src={title}
+                alt='MacBook Title'
+            />
+        </div>
+
 
         <video 
             ref={videoRef}

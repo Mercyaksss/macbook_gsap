@@ -1,7 +1,7 @@
-'use client'
-import React from 'react' 
+'use client';
+import React from 'react';
 import clsx from 'clsx';
-import useMacBookStore from '../store'
+import useMacBookStore from '../store';
 import { Canvas } from '@react-three/fiber';
 import { Box, OrbitControls } from '@react-three/drei';
 import MacbookModel14 from './models/Macbook-14';

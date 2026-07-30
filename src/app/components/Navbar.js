@@ -1,9 +1,9 @@
-import React from 'react'
-import Image from 'next/image'
-import { navLinks } from '../constants'
-import logo from '../../../public/logo.svg'
-import search from '../../../public/search.svg'
-import cart from '../../../public/cart.svg'
+import React from 'react';
+import Image from 'next/image';
+import { navLinks } from '../constants';
+import logo from '../../../public/logo.svg';
+import search from '../../../public/search.svg';
+import cart from '../../../public/cart.svg';
 
 function Navbar() {
   return (
