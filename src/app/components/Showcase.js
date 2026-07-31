@@ -1,11 +1,11 @@
-'use client';
+'use client'
 import React from 'react';
 import Image from 'next/image';
 import maskLogo from '../../../public/mask-logo.svg';
 import { useMediaQuery } from 'react-responsive';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
+import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger);
 
 function Showcase() {
@@ -33,7 +33,7 @@ function Showcase() {
                     ease: 'power1.in'
                 })
         }
-    }, [])
+    }, [isTablet])
 
   return (
     <section id='showcase'>
